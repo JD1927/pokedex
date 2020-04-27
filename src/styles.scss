@@ -1,0 +1,8 @@
+@import './assets/scss/index.scss';
+
+body {
+  background-image: url('./assets/images/topography.svg'), linear-gradient(110deg, #f93d66, #6d47d9);
+  background-size: 340px, auto;
+  background-attachment: fixed;
+  min-height: calc(100vh - 100px);
+}

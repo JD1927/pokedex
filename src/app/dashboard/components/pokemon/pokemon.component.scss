@@ -1,0 +1,33 @@
+@import './../../../../assets/scss/utilities/index.scss';
+
+.pokemon-card {
+  cursor: pointer;
+
+  &:hover {
+    background: #6d47d9;
+  }
+
+  @include e('header') {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include e('content') {
+    @include gc('types') {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @include e('spinner') {
+    display: flex;
+    justify-content: center;
+    padding: 100px 50px;
+  }
+
+
+  @include e('actions') {
+    display: flex;
+    justify-content: center;
+  }
+}

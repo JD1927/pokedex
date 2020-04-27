@@ -1,0 +1,7 @@
+{
+  "/v2": {
+    "target": "https://pokeapi.co/api/v2",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}

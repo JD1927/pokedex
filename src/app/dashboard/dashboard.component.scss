@@ -1,0 +1,14 @@
+@import './../../assets/scss/index.scss';
+
+.title {
+  display: flex;
+  justify-content: center;
+
+  @include e('img') {
+    width: 50%;
+
+    @include mq-up(md) {
+      width: 30%;
+    }
+  }
+}

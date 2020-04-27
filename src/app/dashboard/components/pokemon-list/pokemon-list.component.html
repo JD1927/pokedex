@@ -1,0 +1,5 @@
+<div class="pokemon-list">
+  <div class="pokemon-list__pokemon" *ngFor="let pokemon of pokemonList; trackBy: trackByMethod">
+    <app-pokemon [pokemonList]="pokemonList" [pokemon]="pokemon"></app-pokemon>
+  </div>
+</div>
