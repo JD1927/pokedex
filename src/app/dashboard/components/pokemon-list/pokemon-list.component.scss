@@ -1,0 +1,30 @@
+@import './../../../../assets/scss/index';
+
+.pokemon-list {
+  margin: 30px 90px;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 50px;
+  row-gap: 30px;
+
+  @include mq-up(xs) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mq-up(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include mq-up(lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include e('pokemon') {
+    display: grid;
+    transition: transform .2s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
